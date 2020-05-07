@@ -2,7 +2,7 @@ package com.larva.demo.demo20200506
 
 fun main() {
 
-    val coco = Bird2()  // (4) 클래스의 생성자를 통한 객체의 생성
+    val coco = Bird()  // (4) 클래스의 생성자를 통한 객체의 생성
     coco.color = "blue"  // (5) 객체의 프로퍼티에 값 쓰기
 
     println("coco.color: ${coco.color}") // (6) 객체의 멤버 프로퍼티 읽기
@@ -10,7 +10,7 @@ fun main() {
     coco.sing(3)
 }
 
-class Bird2 { // (1) 클래스의 정의
+class Bird { // (1) 클래스의 정의
     // (2) 프로퍼티들(속성)
     var name: String = "mybird"
     var wing: Int = 2
